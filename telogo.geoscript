@@ -12,7 +12,7 @@ offset = 0.1
 T_{h} = 1.7
 T_{11} = ((x(B) + x(A)) / 2, (y(B) + y(A)) / 2 + offset)
 T_{12} = (x(T_{11}), y(T_{11}) + T_{h})
-T_{21} = Intersect(Segment(Point(x(B)-offset, y(B)), Point(x(C) - offset, y(C))), Line(T_{12},Segment(Point(x(C) + offset, y(C)), Point(x(D)+offset, y(D)))))
+T_{21} = Intersect(Segment(Point({x(B)-offset, y(B)}), Point({x(C) - offset, y(C)})), Line(T_{12},Segment(Point({x(C) + offset, y(C)}), Point({x(D)+offset, y(D)}))))
 T_{22} = Intersect(Segment(Point(x(A)-offset, y(A)), Point(x(D) - offset, y(D))), Line(T_{12},Segment(Point(x(C) + offset, y(C)), Point(x(D)+offset, y(D)))))
 
 
